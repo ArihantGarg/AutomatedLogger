@@ -8,8 +8,13 @@ clean:
 outputLog:
 	cat Logs/log.txt
 
+cleanLog:
+	rm -f Logs/log.txt
+
 run:
 	g++ Codes/sampleProgram1.cpp -o Executables/sampleProgram1
 	./Executables/sampleProgram1
 	$(MAKE) outputLog
 	$(MAKE) clean
+
+
